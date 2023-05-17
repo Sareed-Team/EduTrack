@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace LearningCentre.Domain.Entities.Users
 {
-    public class User:Auditable
     {
         public string Group { get; set; }
         public string Pay { get; set; }
