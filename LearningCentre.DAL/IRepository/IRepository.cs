@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCentre.DAL.IRepository
+namespace LearningCentre.DAL.IRepositoryy
 {
-    internal class IRepository
+    internal class IRepositoryy
     {
     }
 }
