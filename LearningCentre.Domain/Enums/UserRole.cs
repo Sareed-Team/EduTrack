@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LearningCentre.Domain.Enums
 {
-    internal class UserRole
+    public enum UserRole
     {
+        User,
+        Admin
     }
 }
