@@ -9,6 +9,7 @@ namespace LearningCentre.Service.DTOs.Users
 {
     public class UserUpdateDto
     {
+        public long Id { get; set; }    
         [Required(ErrorMessage = "Group is required")]
         public string Group { get; set; }
         [Required(ErrorMessage = "Pay is required")]

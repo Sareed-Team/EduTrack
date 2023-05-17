@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LearningCentre.DAL\LearningCentre.DAL.csproj" />
     <ProjectReference Include="..\LearningCentre.Domain\LearningCentre.Domain.csproj" />
   </ItemGroup>
 
