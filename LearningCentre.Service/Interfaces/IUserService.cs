@@ -16,6 +16,6 @@ namespace LearningCentre.Service.Interfaces
         ValueTask<bool> DeleteAsync(long id);
         ValueTask<UserResultDto> GetByIdAsync(long id);
         ValueTask<IEnumerable<UserResultDto>> GetAllAsync(
-        Expression<Func<Student, bool>> expression = null, string search = null);
+        Expression<Func<User, bool>> expression = null, string search = null);
     }
 }
