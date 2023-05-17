@@ -56,7 +56,7 @@ public class UserService : IUserService
                 u.FirstName.IndexOf(lowercaseSearch, StringComparison.OrdinalIgnoreCase) >= 0 ||
                 u.LastName.IndexOf(lowercaseSearch, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
         }
-        
+
         return result;
     }
 
