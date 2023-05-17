@@ -9,6 +9,7 @@ namespace LearningCentre.Service.DTOs.Users
 {
     public class UserResultDto
     {
+        public long Id { get; set; }
         public string Group { get; set; }
         public string Pay { get; set; }
         public string FirstName { get; set; }
