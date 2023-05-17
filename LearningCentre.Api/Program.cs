@@ -1,4 +1,7 @@
 using LearningCentre.Api.Extensions;
+using LearningCentre.DAL.Contexts;
+using LearningCentre.Service.Mappers;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCustomServices();
-WebHostBuilderKestrelExtensions
+builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
