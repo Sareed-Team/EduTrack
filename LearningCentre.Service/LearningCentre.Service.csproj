@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Users\" />
     <Folder Include="Mappers\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Interfaces\" />
