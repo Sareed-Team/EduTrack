@@ -15,7 +15,7 @@ namespace LearningCentre.DAL.Contexts
         {
         }
 
-        public DbSet<Student>
+        public DbSet<User> Users {get ; set;}
 
     }
 }
